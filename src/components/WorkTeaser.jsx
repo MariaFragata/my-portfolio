@@ -29,7 +29,7 @@ export default function WorkTeaser() {
       <div className="container">
         <div className="work__head">
           <Reveal>
-            <SectionLabel index="03">Selected work</SectionLabel>
+            <SectionLabel index="04">Selected work</SectionLabel>
           </Reveal>
           <Reveal as="h2" className="work__title" delay={80}>
             Currently <em>compiling</em>

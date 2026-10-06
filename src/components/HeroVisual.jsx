@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import useTypewriter from '../hooks/useTypewriter'
+import SparkIcon from './SparkIcon'
 import Sticker from './Sticker'
 import './HeroVisual.css'
 
@@ -93,9 +94,7 @@ export default function HeroVisual() {
 
       <Sticker id="hero" className="hv__sticker" text="christine · compiled with care · " />
 
-      <svg className="hv__spark" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 2c.6 4.8 2.2 7.4 10 10-7.8 2.6-9.4 5.2-10 10-.6-4.8-2.2-7.4-10-10 7.8-2.6 9.4-5.2 10-10Z" />
-      </svg>
+      <SparkIcon className="hv__spark" />
     </div>
   )
 }

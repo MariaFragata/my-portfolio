@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
-import SectionLabel from './SectionLabel'
+import SectionHeading from './SectionHeading'
+import Tags from './Tags'
 import './Toolkit.css'
 
 const STACKS = [
@@ -44,19 +45,16 @@ export default function Toolkit() {
   return (
     <section className="section toolkit" id="toolkit">
       <div className="container">
-        <div className="toolkit__head">
-          <div>
-            <Reveal>
-              <SectionLabel index="02">Toolkit</SectionLabel>
-            </Reveal>
-            <Reveal as="h2" className="toolkit__title" delay={80}>
+        <SectionHeading
+          index="02"
+          label="Toolkit"
+          title={
+            <>
               What I reach for <em>when I build.</em>
-            </Reveal>
-          </div>
-          <Reveal as="p" className="toolkit__intro" delay={160}>
-            Tools change; taste and curiosity stick around. Here's the kit I'm most at home with right now.
-          </Reveal>
-        </div>
+            </>
+          }
+          intro="Tools change; taste and curiosity stick around. Here's the kit I'm most at home with right now."
+        />
 
         <div className="bento">
           <StackCard stack={front} className="bento__card--front" shape="arch" delay={0} />
@@ -110,13 +108,7 @@ function StackCard({ stack, className, shape, delay }) {
       <span className="bento__kicker">{stack.kicker}</span>
       <h3 className="bento__title">{stack.title}</h3>
       <p className="bento__blurb">{stack.blurb}</p>
-      <ul className="tags">
-        {stack.tags.map((tag) => (
-          <li key={tag} className="tag">
-            {tag}
-          </li>
-        ))}
-      </ul>
+      <Tags items={stack.tags} />
     </Reveal>
   )
 }

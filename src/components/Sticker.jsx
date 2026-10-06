@@ -1,3 +1,4 @@
+import SparkIcon from './SparkIcon'
 import './Sticker.css'
 
 export default function Sticker({ id, text, className = '' }) {
@@ -15,9 +16,7 @@ export default function Sticker({ id, text, className = '' }) {
         </text>
       </svg>
       <span className="sticker__core">
-        <svg viewBox="0 0 24 24" width="22" height="22">
-          <path d="M12 2c.6 4.8 2.2 7.4 10 10-7.8 2.6-9.4 5.2-10 10-.6-4.8-2.2-7.4-10-10 7.8-2.6 9.4-5.2 10-10Z" />
-        </svg>
+        <SparkIcon size={22} />
       </span>
     </div>
   )
