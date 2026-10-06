@@ -4,7 +4,7 @@ import Marquee from './components/Marquee'
 import About from './components/About'
 import Toolkit from './components/Toolkit'
 import Education from './components/Education'
-import WorkTeaser from './components/WorkTeaser'
+import Projects from './components/Projects'
 import ContactCTA from './components/ContactCTA'
 import Footer from './components/Footer'
 
@@ -18,7 +18,7 @@ export default function App() {
         <About />
         <Toolkit />
         <Education />
-        <WorkTeaser />
+        <Projects />
         <ContactCTA />
       </main>
       <Footer />

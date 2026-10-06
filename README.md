@@ -12,7 +12,7 @@ npm run lint
 ## Structure
 
 - `src/App.jsx` — page composition
-- `src/components/` — one component + CSS file per section (`Hero`, `About`, `Toolkit`, `WorkTeaser`, `ContactCTA`, ...) and shared pieces (`Button`, `Reveal`, `SectionLabel`, `Sticker`)
+- `src/components/` — one component + CSS file per section (`Hero`, `About`, `Toolkit`, `Education`, `Projects`, `ContactCTA`, ...) and shared pieces (`Button`, `Reveal`, `SectionHeading`, `SectionLabel`, `Tags`, `SparkIcon`, `Sticker`); placeholder content lives in `src/data.js`
 - `src/hooks/` — `useInView` (scroll reveals), `useTypewriter`
 - `src/data.js` — name, email, GitHub, nav links
 - `src/index.css` — design tokens (palette, fonts, easing) and global styles

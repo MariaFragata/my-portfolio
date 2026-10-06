@@ -29,3 +29,32 @@ export const education = [
     focusAreas: ['Data Structures & Algorithms', 'Web Development', 'Human–Computer Interaction', 'Databases', 'Software Engineering'],
   },
 ]
+
+// Placeholder projects — replace names, descriptions, and stacks with your real work.
+export const projects = [
+  {
+    name: 'Project Aurora',
+    description: 'Project description goes here — one or two sentences about what this project is.',
+    stack: ['React', 'JavaScript', 'CSS', 'Vite'],
+  },
+  {
+    name: 'Project Meadow',
+    description: 'Project description goes here — a short summary of the idea behind it.',
+    stack: ['Node.js', 'Express', 'MongoDB'],
+  },
+  {
+    name: 'Project Lumen',
+    description: 'Project description goes here — what it is and who it is for.',
+    stack: ['Python', 'Flask', 'SQLite'],
+  },
+  {
+    name: 'Project Petal',
+    description: 'Project description goes here — one or two sentences about what this project is.',
+    stack: ['Figma', 'HTML', 'CSS'],
+  },
+  {
+    name: 'Project Orbit',
+    description: 'Project description goes here — a short summary of the idea behind it.',
+    stack: ['React', 'TypeScript', 'Firebase'],
+  },
+]
