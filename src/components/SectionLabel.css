@@ -1,0 +1,21 @@
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.section-label__index {
+  color: var(--rose-deep);
+}
+
+.section-label__line {
+  width: 36px;
+  height: 1.5px;
+  background: currentColor;
+  opacity: 0.4;
+}
