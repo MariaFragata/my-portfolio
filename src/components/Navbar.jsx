@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { navLinks } from '../data'
+import ThemeToggle from './ThemeToggle'
 import './Navbar.css'
 
 export default function Navbar() {
@@ -46,6 +47,8 @@ export default function Navbar() {
           <span className="pulse-dot" aria-hidden="true" />
           Open to collabs
         </a>
+
+        <ThemeToggle />
 
         <button
           type="button"

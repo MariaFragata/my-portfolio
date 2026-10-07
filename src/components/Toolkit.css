@@ -182,7 +182,7 @@
   gap: 4px;
   padding: 16px 14px 18px;
   border-radius: var(--radius-md);
-  border: 1.5px dashed #cdbfae;
+  border: 1.5px dashed var(--line-dash);
   transition:
     background-color 0.35s var(--ease),
     border-color 0.35s var(--ease),

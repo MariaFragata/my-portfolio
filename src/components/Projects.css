@@ -5,7 +5,7 @@
 
 .projects__inner {
   padding-top: clamp(40px, 6vw, 80px);
-  border-top: 1.5px dashed rgba(43, 38, 34, 0.2);
+  border-top: 1.5px dashed var(--line-dash);
 }
 
 .projects__panel {
@@ -67,7 +67,7 @@
 }
 
 .project + .project {
-  border-top: 1.5px dashed rgba(43, 38, 34, 0.22);
+  border-top: 1.5px dashed var(--line-dash);
 }
 
 .project__inner {

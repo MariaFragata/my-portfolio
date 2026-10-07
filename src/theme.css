@@ -1,0 +1,315 @@
+/* ── Dark theme: "inverted cozy" ─────────────────────────────
+   Palette per spec: deep evergreen charcoal, warm cream text,
+   olive-gray secondaries, glowing rose + sage accents. */
+
+[data-theme='dark'] {
+  --pink-dust: #f4a2b4; /* glowing soft rose */
+  --pink-soft: #2c1f29; /* muted pink surface for chips/blocks */
+  --cream: #17251d; /* warm section tint over the base bg */
+  --sage: #94b09b; /* glowing sage */
+
+  --sage-deep: #a9c7b0;
+  --rose-deep: #f4a2b4;
+  --ink: #f0f5f2; /* warm cream text */
+  --ink-soft: #c3d2c8;
+  --ink-mute: #8fa396; /* olive gray */
+  --paper: #17251d; /* main card surface */
+  --paper-warm: #142019; /* table headers / quieter surfaces */
+  --line: rgba(255, 255, 255, 0.08);
+  --line-dash: rgba(240, 245, 242, 0.22);
+}
+
+/* code card (christine.js) — dark sage / charcoal per spec */
+[data-theme='dark'] .hv__card {
+  background: #1c2a22;
+  border-color: var(--line);
+}
+[data-theme='dark'] .hv__code .tk-k { color: #f4a2b4; }
+[data-theme='dark'] .hv__code .tk-s { color: #a9c7b0; }
+[data-theme='dark'] .hv__code .tk-c { color: #63776b; }
+[data-theme='dark'] .hv__code .tk-p { color: #8fa396; }
+[data-theme='dark'] .hv__code .ln::before { color: #63776b; }
+[data-theme='dark'] .hv__dots i { border-color: rgba(14, 23, 18, 0.85); }
+[data-theme='dark'] .hv__note { background: #223428; }
+[data-theme='dark'] .hv__arch {
+  background: linear-gradient(172deg, #3a2734 8%, #241d20 96%);
+  border-color: var(--line);
+}
+[data-theme='dark'] .hv__sun {
+  background: #f4a2b4;
+  box-shadow:
+    0 0 0 16px rgba(244, 162, 180, 0.14),
+    0 0 0 36px rgba(244, 162, 180, 0.07);
+}
+[data-theme='dark'] .hv__horizon {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 12px,
+    rgba(244, 162, 180, 0.35) 12px 14px
+  );
+}
+
+/* hero backdrop — keep the glows, cool them down */
+[data-theme='dark'] .hero {
+  background:
+    radial-gradient(48% 52% at 82% 38%, rgba(244, 162, 180, 0.1), transparent 72%),
+    radial-gradient(38% 42% at 6% 92%, rgba(148, 176, 155, 0.08), transparent 70%),
+    #0e1712;
+}
+[data-theme='dark'] .hero__dots {
+  background-image: radial-gradient(rgba(240, 245, 242, 0.12) 1px, transparent 1.2px);
+}
+[data-theme='dark'] .hero__lead b {
+  color: var(--sage-deep);
+}
+[data-theme='dark'] .hero__eyebrow .dot {
+  background: var(--pink-dust);
+}
+
+/* primary button — cream bg + forest text per spec */
+[data-theme='dark'] .btn--primary {
+  background: #f0f5f2;
+  color: #0e1712;
+}
+[data-theme='dark'] .btn--primary:hover {
+  box-shadow: 4px 4px 0 var(--pink-dust);
+}
+
+/* "now" card in Toolkit: near-black evergreen */
+[data-theme='dark'] .bento__card--now {
+  --card-bg: #0c1510;
+}
+[data-theme='dark'] .now__file {
+  color: var(--ink-mute);
+}
+[data-theme='dark'] .bento__card--back .bento__title,
+[data-theme='dark'] .bento__card--back .bento__blurb {
+  color: #0e1712;
+}
+
+/* process card chips */
+[data-theme='dark'] .process__item {
+  background: var(--paper-warm);
+}
+
+/* education ticket stub — keep it pink, deepen it */
+[data-theme='dark'] .edu-card__stub {
+  background: linear-gradient(170deg, #33202b 30%, #241721);
+}
+[data-theme='dark'] .edu-card__crest {
+  background: var(--sage);
+  color: #0e1712;
+}
+[data-theme='dark'] .edu-card__degree em,
+[data-theme='dark'] .edu-card__subhead {
+  color: var(--sage-deep);
+}
+[data-theme='dark'] .edu-card__status {
+  color: var(--ink);
+}
+[data-theme='dark'] .edu-card__sun {
+  background: #fff0c4;
+  box-shadow:
+    0 0 0 10px rgba(255, 240, 196, 0.16),
+    0 0 0 24px rgba(255, 240, 196, 0.08);
+}
+
+/* project rows — soft blocks get darker tints, fills glow */
+[data-theme='dark'] .project {
+  --block: rgba(244, 162, 180, 0.1);
+  --fill: #f4a2b4;
+}
+[data-theme='dark'] .project:nth-child(4n + 2) {
+  --block: rgba(148, 176, 155, 0.1);
+  --fill: #94b09b;
+}
+[data-theme='dark'] .project:nth-child(4n + 3) {
+  --block: rgba(255, 240, 196, 0.07);
+  --fill: #e9c46a;
+}
+[data-theme='dark'] .project:nth-child(4n) {
+  --block: rgba(244, 162, 180, 0.07);
+  --fill: #f4a2b4;
+}
+[data-theme='dark'] .project__num {
+  -webkit-text-stroke-color: var(--ink-mute);
+}
+
+/* about sticky notes */
+[data-theme='dark'] .note--sage {
+  --bg: #1e2d22;
+}
+[data-theme='dark'] .note__tape {
+  background: rgba(244, 162, 180, 0.35);
+}
+[data-theme='dark'] .note__tape--sage {
+  background: rgba(148, 176, 155, 0.3);
+}
+
+/* contact card rings + card text */
+[data-theme='dark'] .cta-card {
+  background:
+    radial-gradient(50% 80% at 100% 0%, rgba(244, 162, 180, 0.16), transparent 70%),
+    radial-gradient(40% 60% at 0% 100%, rgba(255, 240, 196, 0.08), transparent 70%),
+    #2c1f29;
+}
+[data-theme='dark'] .cta-card__ring {
+  border-color: rgba(240, 245, 242, 0.2);
+  box-shadow:
+    0 0 0 34px rgba(244, 162, 180, 0.08),
+    0 0 0 35.5px rgba(240, 245, 242, 0.08);
+}
+[data-theme='dark'] .cta-card__later {
+  color: #d8cbbd;
+}
+
+/* marquee + sticker bits */
+[data-theme='dark'] .marquee {
+  background: #2c1f29;
+}
+[data-theme='dark'] .marquee__track svg {
+  fill: #f4a2b4;
+  stroke: var(--ink);
+}
+[data-theme='dark'] .sticker__text {
+  fill: #0e1712;
+}
+
+/* navbar frosted bar + mobile sheet */
+[data-theme='dark'] .nav--scrolled {
+  background: rgba(14, 23, 18, 0.82);
+}
+[data-theme='dark'] .nav__menu {
+  background: rgba(23, 37, 29, 0.97);
+}
+[data-theme='dark'] .nav__mark {
+  background: #2c1f29;
+}
+[data-theme='dark'] .nav__mark:hover {
+  background: #3d2838;
+}
+[data-theme='dark'] .nav__links a:hover {
+  background: #2c1f29;
+}
+[data-theme='dark'] .nav__status {
+  background: var(--paper-warm);
+}
+[data-theme='dark'] .nav__status:hover {
+  border-color: var(--sage);
+}
+@media (max-width: 860px) {
+  [data-theme='dark'] .nav--open {
+    background: rgba(23, 37, 29, 0.97);
+  }
+  [data-theme='dark'] .nav__links {
+    box-shadow: 6px 6px 0 rgba(244, 162, 180, 0.25);
+  }
+}
+
+/* footer stays dark on dark — slightly deeper than bg */
+[data-theme='dark'] .footer {
+  background: #0a120e;
+}
+[data-theme='dark'] .footer__word {
+  color: var(--pink-dust);
+}
+
+/* soft tags on dark surfaces */
+[data-theme='dark'] .tag:hover {
+  background: #24352b;
+}
+
+/* selection + focus in dark */
+[data-theme='dark'] ::selection {
+  background: #4a2e3a;
+  color: #f0f5f2;
+}
+
+/* ── refinements ── */
+
+/* eyebrow pill — was a hardcoded cream rgba */
+[data-theme='dark'] .hero__eyebrow {
+  background: rgba(23, 37, 29, 0.78);
+  border-color: var(--line);
+}
+
+/* code card shadow: glowing rose instead of bright sage */
+[data-theme='dark'] .hv__card,
+[data-theme='dark'] .hv:hover .hv__card {
+  box-shadow: 10px 10px 0 rgba(244, 162, 180, 0.35);
+}
+@media (max-width: 520px) {
+  [data-theme='dark'] .hv__card {
+    box-shadow: 7px 7px 0 rgba(244, 162, 180, 0.35);
+  }
+}
+
+/* toolkit "now" card: keep text readable on near-black */
+[data-theme='dark'] .bento__card--now .bento__kicker {
+  color: var(--pink-dust);
+}
+[data-theme='dark'] .now__list li:hover {
+  color: var(--pink-dust);
+}
+[data-theme='dark'] .now__list li {
+  border-top-color: rgba(240, 245, 242, 0.12);
+}
+
+/* toolkit sage card: dark text on the light sage block */
+[data-theme='dark'] .bento__card--back .bento__kicker {
+  color: #31402a;
+}
+[data-theme='dark'] .bento__card--back .tag {
+  color: #0e1712;
+}
+[data-theme='dark'] .bento__card--back .tag:hover {
+  background: var(--pink-dust);
+}
+
+/* sticker badge: sage ring stays light, text goes dark */
+[data-theme='dark'] .sticker__ring text {
+  fill: #0e1712;
+}
+[data-theme='dark'] .sticker__core {
+  background: #1c2a22;
+}
+
+/* education ticket stub: the cream disc becomes a glowing rose moon */
+[data-theme='dark'] .edu-card__sun {
+  background: #f4a2b4;
+  border-color: rgba(240, 245, 242, 0.25);
+  box-shadow: 0 0 0 16px rgba(244, 162, 180, 0.16);
+}
+[data-theme='dark'] .edu-card__dates,
+[data-theme='dark'] .edu-card__class-label {
+  color: var(--ink);
+}
+
+/* contact card — keep it as the big glowing rose panel */
+[data-theme='dark'] .contact__card {
+  border-color: rgba(14, 23, 18, 0.55);
+}
+[data-theme='dark'] .contact__glow {
+  background:
+    radial-gradient(50% 80% at 100% 0%, rgba(255, 255, 255, 0.3), transparent 70%),
+    radial-gradient(40% 60% at 0% 100%, rgba(255, 240, 196, 0.22), transparent 70%);
+}
+[data-theme='dark'] .contact__glow::after {
+  border-color: rgba(14, 23, 18, 0.3);
+  box-shadow:
+    0 0 0 34px rgba(255, 255, 255, 0.12),
+    0 0 0 35.5px rgba(14, 23, 18, 0.16);
+}
+[data-theme='dark'] .contact__title,
+[data-theme='dark'] .contact__kicker {
+  color: #0e1712;
+}
+[data-theme='dark'] .contact__title em {
+  color: #5a2430;
+}
+[data-theme='dark'] .contact__sticker {
+  background: #f0f5f2;
+}
+[data-theme='dark'] .bento__card--now {
+  color: var(--ink);
+}

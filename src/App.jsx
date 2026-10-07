@@ -7,6 +7,7 @@ import Education from './components/Education'
 import Projects from './components/Projects'
 import ContactCTA from './components/ContactCTA'
 import Footer from './components/Footer'
+import './theme.css'
 
 export default function App() {
   return (

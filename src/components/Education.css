@@ -6,7 +6,7 @@
 
 .education__inner {
   padding-top: clamp(40px, 6vw, 80px);
-  border-top: 1.5px dashed rgba(43, 38, 34, 0.2);
+  border-top: 1.5px dashed var(--line-dash);
 }
 
 .edu-card {
@@ -165,7 +165,7 @@
   justify-content: space-between;
   gap: 28px;
   padding: clamp(26px, 3vw, 38px);
-  border-left: 1.5px dashed rgba(43, 38, 34, 0.35);
+  border-left: 1.5px dashed var(--line-dash);
   border-radius: 0 calc(var(--radius-lg) - 1.5px) calc(var(--radius-lg) - 1.5px) 0;
   background: linear-gradient(170deg, var(--pink-soft) 30%, #f6c9c9);
 }
@@ -303,7 +303,7 @@
     align-items: end;
     gap: 20px;
     border-left: 0;
-    border-top: 1.5px dashed rgba(43, 38, 34, 0.35);
+    border-top: 1.5px dashed var(--line-dash);
     border-radius: 0 0 calc(var(--radius-lg) - 1.5px) calc(var(--radius-lg) - 1.5px);
   }
 
