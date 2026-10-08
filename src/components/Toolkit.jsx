@@ -9,21 +9,21 @@ const STACKS = [
     kicker: 'Interfaces',
     title: 'Frontend craft',
     blurb: 'Responsive, accessible UIs with motion that feels natural — never noisy.',
-    tags: ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Vite'],
+    tags: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
   },
   {
     id: 'back',
     kicker: 'Back of house',
     title: 'Logic & data',
     blurb: 'The plumbing that keeps the pretty parts honest.',
-    tags: ['Node.js', 'Express', 'REST APIs', 'SQL', 'Git'],
+    tags: ['Java', 'REST APIs', 'SQL', 'Git'],
   },
   {
     id: 'design',
     kicker: 'Design sense',
     title: 'Look & feel',
     blurb: 'Comfortable with a design file and with the details it forgot.',
-    tags: ['Figma', 'Design systems', 'Prototyping', 'A11y'],
+    tags: ['Figma', 'Prototyping'],
   },
 ]
 
