@@ -87,11 +87,6 @@ export default function HeroVisual() {
           </code>
         </pre>
       </figure>
-
-      <p className="hv__note">
-        ideas in, <em>experiences</em> out
-      </p>
-
       <Sticker id="hero" className="hv__sticker" text="christine · compiled with care · " />
 
       <SparkIcon className="hv__spark" />

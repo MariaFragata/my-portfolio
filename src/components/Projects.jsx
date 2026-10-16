@@ -39,8 +39,7 @@ export default function Projects() {
               <>
                 Small things, <em>carefully made.</em>
               </>
-            }
-            intro="A growing shelf of things I've built. Full write-ups, screenshots, and links are on the way."
+            }           
           />
 
           <Reveal className="projects__panel" delay={120}>

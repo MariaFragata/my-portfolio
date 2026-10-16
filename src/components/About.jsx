@@ -10,7 +10,7 @@ const NOTES = [
   },
   {
     label: 'Off-screen',
-    text: 'Sketchbooks, slow mornings, and playlists that are way too specific to share.',
+    text: 'Movies, slow mornings, and playlists that are way too specific to share.',
     tone: 'cream',
   },
   {

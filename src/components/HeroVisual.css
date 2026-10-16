@@ -195,31 +195,6 @@
   }
 }
 
-.hv__note {
-  position: absolute;
-  top: 12%;
-  left: 2%;
-  padding: 10px 16px;
-  border-radius: 16px 16px 16px 4px;
-  border: 1.5px solid var(--ink);
-  background: var(--cream);
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--ink);
-  rotate: -5deg;
-  transform: translate(calc(var(--px) * 1.2), calc(var(--py) * 1.2));
-  transition:
-    transform 0.6s var(--ease),
-    rotate 0.5s var(--ease-bounce);
-  animation: bob 6s ease-in-out infinite;
-}
-
-.hv__note em {
-  font-family: var(--font-display);
-  font-size: 1.12em;
-  color: var(--rose-deep);
-}
-
 .hv__note:hover {
   rotate: 0deg;
 }

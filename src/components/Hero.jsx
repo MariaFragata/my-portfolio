@@ -57,7 +57,7 @@ export default function Hero() {
               Open to new projects
             </span>
             <span className="hero__meta-sep" aria-hidden="true" />
-            <span className="hero__meta-item">Frontend · UI engineering · Full-stack</span>
+            <span className="hero__meta-item">Web Development · UI Design</span>
           </p>
         </div>
 
