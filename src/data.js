@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Christine',
   email: 'maria.christinefragata@gmail.com',
-  github: 'https://github.com/MariaAvermaria',
+  github: 'https://github.com/MariaFragata',
 }
 
 export const navLinks = [
